@@ -99,7 +99,10 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
+      expect(page).to_not have_css("#food-11")
     end
+
 
   end
 end
