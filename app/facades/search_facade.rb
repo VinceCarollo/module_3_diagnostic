@@ -13,7 +13,7 @@ class SearchFacade
 
   private
   attr_reader :term
-  
+
   def service
     UsdaService.new(term)
   end

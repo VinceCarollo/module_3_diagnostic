@@ -30,11 +30,21 @@ RSpec.describe 'As a visitor on the root page' do
       expect(page).to have_content("531 Results")
 
       within "#food-1" do
-        expect(page).to have_css(".ndb_number")
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".category")
-        expect(page).to have_css(".data_source")
-        expect(page).to have_css(".manufacturer")
+        within(".ndb_number") do
+          expect(page).to have_content('45094945')
+        end
+        within(".name") do
+          expect(page).to have_content('ONE POTATO TWO POTATO, PLAIN JAYNES, SWEET POTATO CHIPS, UPC: 785654000544')
+        end
+        within(".category") do
+          expect(page).to have_content('Branded Food Products Database')
+        end
+        within(".data_source") do
+          expect(page).to have_content('LI')
+        end
+        within(".manufacturer") do
+          expect(page).to have_content("Dieffenbach's Potato Chips")
+        end
       end
       within "#food-2" do
         expect(page).to have_css(".ndb_number")

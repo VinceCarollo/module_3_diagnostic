@@ -2,19 +2,19 @@
 <% facade.search_results.each_with_index do |food, i| %>
   <section id="food-<%= i + 1 %>">
     <section class='ndb_number'>
-      <p><%= food.ndb_number %></p>
+      <p><strong>NDB Number:</strong> <%= food.ndb_number %></p>
     </section>
     <section class='name'>
-      <p><%= food.name %></p>
+      <p><strong>Name:</strong> <%= food.name %></p>
     </section>
     <section class='category'>
-      <p><%= food.category %></p>
+      <p><strong>Cateogory:</strong> <%= food.category %></p>
     </section>
     <section class='data_source'>
-      <p><%= food.data_source %></p>
+      <p><strong>Data Source:</strong> <%= food.data_source %></p>
     </section>
     <section class='manufacturer'>
-      <p><%= food.manufacturer %></p>
+      <p><strong>Manufacturer:</strong> <%= food.manufacturer %></p>
     </section>
   </section>
   <% break if i == 9 %>
