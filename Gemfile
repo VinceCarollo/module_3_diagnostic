@@ -17,6 +17,10 @@ group :development, :test do
   gem 'pry'
   gem 'awesome_print'
   gem 'figaro'
+  gem 'launchy'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'simplecov'
 end
 
 group :test do

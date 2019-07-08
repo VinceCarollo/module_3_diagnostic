@@ -1,0 +1,22 @@
+<h1><%= facade.search_results.length %> Results</h1>
+<% facade.search_results.each_with_index do |food, i| %>
+  <section id="food-<%= i + 1 %>">
+    <section class='ndb_number'>
+      <p><strong>NDB Number:</strong> <%= food.ndb_number %></p>
+    </section>
+    <section class='name'>
+      <p><strong>Name:</strong> <%= food.name %></p>
+    </section>
+    <section class='category'>
+      <p><strong>Cateogory:</strong> <%= food.category %></p>
+    </section>
+    <section class='data_source'>
+      <p><strong>Data Source:</strong> <%= food.data_source %></p>
+    </section>
+    <section class='manufacturer'>
+      <p><strong>Manufacturer:</strong> <%= food.manufacturer %></p>
+    </section>
+  </section>
+  <% break if i == 9 %>
+  <hr>
+<% end %>
