@@ -19,7 +19,7 @@ require 'rails_helper'
 RSpec.describe 'As a visitor on the root page' do
   describe 'when filling in the search form' do
 
-    it "successfully searches for foods" do
+    it "successfully searches for foods", :vcr do
       visit '/'
 
       fill_in :q, with: 'sweet potatoes'
