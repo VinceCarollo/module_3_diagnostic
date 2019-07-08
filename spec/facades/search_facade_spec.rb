@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe SearchFacade do
 
-  it ".search_results", :vcr do
+  it "#search_results", :vcr do
     facade = SearchFacade.new("tomato")
     data = facade.search_results
 
