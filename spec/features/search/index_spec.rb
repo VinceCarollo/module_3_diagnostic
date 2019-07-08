@@ -48,51 +48,111 @@ RSpec.describe 'As a visitor on the root page' do
       end
 
       within "#food-2" do
-        expect(page).to have_css(".ndb_number")
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".category")
-        expect(page).to have_css(".data_source")
-        expect(page).to have_css(".manufacturer")
+        within(".ndb_number") do
+          expect(page).to have_content('45165952')
+        end
+        within(".name") do
+          expect(page).to have_content('TERRA, SWEET POTATO CHIPS, PUMPKIN SPICE SWEETS, UPC: 728229014751')
+        end
+        within(".category") do
+          expect(page).to have_content('Branded Food Products Database')
+        end
+        within(".data_source") do
+          expect(page).to have_content('LI')
+        end
+        within(".manufacturer") do
+          expect(page).to have_content("THE HAIN CELESTIAL GROUP, INC.")
+        end
       end
 
       within "#food-3" do
-        expect(page).to have_css(".ndb_number")
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".category")
-        expect(page).to have_css(".data_source")
-        expect(page).to have_css(".manufacturer")
+        within(".ndb_number") do
+          expect(page).to have_content('45109414')
+        end
+        within(".name") do
+          expect(page).to have_content("CHILI'S, SWEET & SPICY CHICKEN & SWEET POTATOES, BIG BOLD, UPC: 717854470377")
+        end
+        within(".category") do
+          expect(page).to have_content('Branded Food Products Database')
+        end
+        within(".data_source") do
+          expect(page).to have_content('LI')
+        end
+        within(".manufacturer") do
+          expect(page).to have_content("Bellisio Foods Inc")
+        end
       end
 
       within "#food-4" do
-        expect(page).to have_css(".ndb_number")
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".category")
-        expect(page).to have_css(".data_source")
-        expect(page).to have_css(".manufacturer")
+        within(".ndb_number") do
+          expect(page).to have_content('45219208')
+        end
+        within(".name") do
+          expect(page).to have_content("SWEET POTATO POPPED POTATO CRISPS, UPC: 075450137415")
+        end
+        within(".category") do
+          expect(page).to have_content('Branded Food Products Database')
+        end
+        within(".data_source") do
+          expect(page).to have_content('LI')
+        end
+        within(".manufacturer") do
+          expect(page).to have_content("Hy-Vee, Inc.")
+        end
       end
 
       within "#food-5" do
-        expect(page).to have_css(".ndb_number")
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".category")
-        expect(page).to have_css(".data_source")
-        expect(page).to have_css(".manufacturer")
+        within(".ndb_number") do
+          expect(page).to have_content('45324838')
+        end
+        within(".name") do
+          expect(page).to have_content("SWEET POTATO KETTLE POTATO CHIPS, UPC: 762111242839")
+        end
+        within(".category") do
+          expect(page).to have_content('Branded Food Products Database')
+        end
+        within(".data_source") do
+          expect(page).to have_content('LI')
+        end
+        within(".manufacturer") do
+          expect(page).to have_content("STARBUCKS COFFEE COMPANY")
+        end
       end
 
       within "#food-6" do
-        expect(page).to have_css(".ndb_number")
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".category")
-        expect(page).to have_css(".data_source")
-        expect(page).to have_css(".manufacturer")
+        within(".ndb_number") do
+          expect(page).to have_content('45372027')
+        end
+        within(".name") do
+          expect(page).to have_content("SWEET POTATOES, RED POTATOES, CARROTS & PARSNIPS VEGETABLES FOR ROASTING, UPC: 070560970907")
+        end
+        within(".category") do
+          expect(page).to have_content('Branded Food Products Database')
+        end
+        within(".data_source") do
+          expect(page).to have_content('LI')
+        end
+        within(".manufacturer") do
+          expect(page).to have_content("The Pictsweet Company")
+        end
       end
 
       within "#food-7" do
-        expect(page).to have_css(".ndb_number")
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".category")
-        expect(page).to have_css(".data_source")
-        expect(page).to have_css(".manufacturer")
+        within(".ndb_number") do
+          expect(page).to have_content('11505')
+        end
+        within(".name") do
+          expect(page).to have_content("Sweet potato leaves, raw")
+        end
+        within(".category") do
+          expect(page).to have_content('Vegetables and Vegetable Products')
+        end
+        within(".data_source") do
+          expect(page).to have_content('SR')
+        end
+        within(".manufacturer") do
+          expect(page).to have_content("none")
+        end
       end
 
       within "#food-8" do
@@ -110,7 +170,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
-      
+
       within "#food-10" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
