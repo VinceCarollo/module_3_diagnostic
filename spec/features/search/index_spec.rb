@@ -46,6 +46,7 @@ RSpec.describe 'As a visitor on the root page' do
           expect(page).to have_content("Dieffenbach's Potato Chips")
         end
       end
+
       within "#food-2" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -53,6 +54,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
       within "#food-3" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -60,6 +62,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
       within "#food-4" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -67,6 +70,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
       within "#food-5" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -74,6 +78,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
       within "#food-6" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -81,6 +86,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
       within "#food-7" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -88,6 +94,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
       within "#food-8" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -95,6 +102,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+
       within "#food-9" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")
@@ -102,6 +110,7 @@ RSpec.describe 'As a visitor on the root page' do
         expect(page).to have_css(".data_source")
         expect(page).to have_css(".manufacturer")
       end
+      
       within "#food-10" do
         expect(page).to have_css(".ndb_number")
         expect(page).to have_css(".name")

@@ -1,17 +1,14 @@
 class UsdaService
-  def initialize(term)
-    @term = term
-  end
 
-  def food_data
-    response = fetch('/ndb/search')
+  def food_data(term)
+    response = search('/ndb/search', term)
     JSON.parse(response.body, symbolize_names: true)
   end
 
   private
   attr_reader :term
 
-  def fetch(path)
+  def search(path, term)
     conn.get(path) do |req|
       req.params['q'] = term
     end
